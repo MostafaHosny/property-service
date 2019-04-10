@@ -1,0 +1,40 @@
+AllCops:
+  TargetRubyVersion: 2.5
+  Exclude:
+    - bin/*
+    - db/schema.rb
+    - vendor/**/*
+
+Layout/AccessModifierIndentation:
+  EnforcedStyle: outdent
+
+Lint/HandleExceptions:
+  Enabled: false
+
+Metrics/BlockLength:
+  Exclude:
+    - config/initializers/*
+    - config/routes.rb
+    - config/environments/*
+
+Metrics/LineLength:
+  Enabled: false
+
+Metrics/MethodLength:
+  Exclude:
+    - spec/**/*
+
+Rails:
+  Enabled: true
+
+Style/Documentation:
+  Enabled: false
+
+Style/RescueModifier:
+  Enabled: false
+
+Style/RescueStandardError:
+  Enabled: false
+
+Style/FrozenStringLiteralComment:
+  Enabled: false
