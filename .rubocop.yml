@@ -11,6 +11,8 @@ Layout/AccessModifierIndentation:
 Lint/HandleExceptions:
   Enabled: false
 
+
+
 Metrics/BlockLength:
   Exclude:
     - config/initializers/*
@@ -20,20 +22,17 @@ Metrics/BlockLength:
 Metrics/LineLength:
   Enabled: false
 
-Metrics/MethodLength:
-  Exclude:
-    - spec/**/*
-
 Rails:
   Enabled: true
 
+Style/BlockDelimiters:
+  Exclude:
+    - spec/**/*
+
+Style/ClassAndModuleChildren:
+  Enabled: false
+
 Style/Documentation:
-  Enabled: false
-
-Style/RescueModifier:
-  Enabled: false
-
-Style/RescueStandardError:
   Enabled: false
 
 Style/FrozenStringLiteralComment:
