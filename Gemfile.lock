@@ -33,6 +33,10 @@ GEM
       activemodel (= 5.2.3)
       activesupport (= 5.2.3)
       arel (>= 9.0)
+    activerecord-postgres-earthdistance (0.7.1)
+      activerecord (>= 3.1)
+      pg
+      rake
     activestorage (5.2.3)
       actionpack (= 5.2.3)
       activerecord (= 5.2.3)
@@ -189,6 +193,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  activerecord-postgres-earthdistance
   bootsnap (>= 1.1.0)
   bundler-audit
   factory_bot_rails

@@ -18,7 +18,8 @@ gem 'puma', '~> 3.11'
 
 # Use ActiveStorage variant
 # gem 'mini_magick', '~> 4.8'
-
+# use postgres-earthdistance to check distances with latitude and longitude using PostgreSQL
+gem 'activerecord-postgres-earthdistance'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
