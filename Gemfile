@@ -28,6 +28,8 @@ gem 'bootsnap', '>= 1.1.0', require: false
 
 # Use Rack CORS for handling Cross-Origin Resource Sharing (CORS), making cross-origin AJAX possible
 # gem 'rack-cors'
+# serializer for Ruby Objects faster 24 times than active model serializer performance matters
+gem 'fast_jsonapi'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
@@ -36,10 +38,13 @@ group :development, :test do
 
   gem 'bundler-audit', require: false
   gem 'factory_bot_rails'
-  gem 'faker'
-  gem 'rspec-collection_matchers'
   gem 'rspec-rails'
   gem 'rubocop', require: false
+  gem 'rubocop-performance'
+end
+
+group :test do
+  gem 'shoulda-matchers', '~> 3.0', require: false
 end
 
 group :development do
