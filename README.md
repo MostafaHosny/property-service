@@ -1,6 +1,6 @@
 # Property Service API :sunny:
 
-- given latitude and longitude of an object, its type and marketing type, returns a list of similar objects with their prices.
+- Given latitude and longitude of an object, its type and marketing type, returns a list of similar objects with their prices.
 
 ## Getting Started
 
@@ -47,6 +47,7 @@
   - `marketing_type` : `sell`
 
 - Response
+```
   {
     "data": [
         {
@@ -77,3 +78,4 @@
         },
       ]
     }  
+```
